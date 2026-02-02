@@ -2,10 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Site</title>
+  <!-- Google Font: Dancing Script -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Fatima A. Rodriguez</h1>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2 class="hero-title">Welcome!</h2>
+      <p class="hero-sub">Hello There! Welcome to my portfolio site. This is where I showcase my web development projects and skills.</p>
+      <a class="btn" href="#about">About me</a>
+    </div>
+  </section>
+
+  <!-- About / Bio -->
+  <section id="about" class="bio container">
+    <!-- Add a profile image named "itsme.jpg" into the img/ folder to show here -->
+    <img src="img/itsme.JPG" alt="Profile" class="profile-img">
+    <div class="bio-text">
+      <h3>About Me</h3>
+      <p> I am an Arizona State University Online student passsionate about web development and life-long learning. I reside in San Diego , California but I was born in Tijuana, Mexico. I love to create as I always had a love for the arts. Being able to marry both technology and art as a career makes me excited to continue learning and growing in this field.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container skills">
+    <h3>Skills</h3>
+    <ul class="skill-list">
+      <li>
+        <strong>HTML</strong>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 85%;"></div>
+        </div>
+      </li>
+      <li>
+        <strong>CSS</strong>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 75%;"></div>
+        </div>
+      </li>
+      <li>
+        <strong>JavaScript</strong>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 50%;"></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact / Social links -->
+  <section id="contact" class="container contact">
+    <h3>Contact</h3>
+    <p>Find me on social media — click an icon to open my profile.</p>
+
+    <div class="social-links" aria-label="Social links">
+      <a href="https://facebook.com/yourprofile" class="social-link facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <span class="social-icon">
+          <!-- Simple Facebook "f" icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img" width="20" height="20">
+            <title>Facebook</title>
+            <path fill="#fff" d="M22 12.07C22 6.48 17.52 2 11.93 2 6.33 2 2 6.48 2 12.07 2 17.09 5.66 21.26 10.44 22v-7.01H8.08v-2.92h2.36V9.18c0-2.33 1.39-3.61 3.52-3.61 1.02 0 2.09.18 2.09.18v2.29h-1.17c-1.15 0-1.51.72-1.51 1.46v1.76h2.57l-.41 2.92h-2.16V22C18.34 21.26 22 17.09 22 12.07z"/>
+          </svg>
+        </span>
+        <span class="social-text">Facebook</span>
+      </a>
+
+      <a href="https://instagram.com/yourprofile" class="social-link instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <span class="social-icon">
+          <!-- Simple Instagram camera icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img" width="20" height="20">
+            <title>Instagram</title>
+            <path fill="#fff" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm5.5-3a1.2 1.2 0 1 0 1.2 1.2A1.2 1.2 0 0 0 17.5 5.5z"/>
+          </svg>
+        </span>
+        <span class="social-text">Instagram</span>
+      </a>
+
+      <a href="https://tiktok.com/@yourprofile" class="social-link tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <span class="social-icon">
+          <!-- Simple TikTok note icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img" width="20" height="20">
+            <title>TikTok</title>
+            <path fill="#fff" d="M12 3v10.5A4.5 4.5 0 1 0 14.5 18V7.5h3V5h-6z"/>
+          </svg>
+        </span>
+        <span class="social-text">TikTok</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Fatima A. Rodriguez.</p>
+    </div>
+  </footer>
 </body>
 </html>
